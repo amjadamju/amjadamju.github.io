@@ -1,25 +1,315 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amjad N</title>
-    <!-- development version, includes helpful console warnings -->
-    <link rel="stylesheet" href="index.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Amjad N</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/a-logo.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/index.js"></script>
 </head>
 
 <body>
-    <div id="app">
-        <h2>{{ name }}</h2>
-        <img src={{image}}>
-        <li v-for="about in aboutme">
-            {{about.about}}
+
+  <!-- Start your project here-->
+  <!--Navbar -->
+  <nav class="mb-1 navbar main-nav navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html"><img style="width: 60px;" src="img/a-logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+      aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About me
+          </a>
         </li>
-        <p>{{ description }}</p>
-        <span v-bind:title="time">{{time}}</span>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resume">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact me</a>
+        </li>
+      </ul>
     </div>
-    <script src="index.js"></script>
+  </nav>
+  <section id="title">
+    <h1 class="m-5" style="text-align: center;">I'm
+      <span class="txt-rotate" data-period="1000" data-rotate='[ "Amjad N.", "a Web developer." ]'></span>
+    </h1>
+    <div class="row">
+      <div class="col m-5">
+        <img class="ml-5 mr-5 mb-5" style="width: 50%;" src="img/profile.jpeg">
+      </div>
+      <div class="col m-5">
+        <h2 class="mt-5">| About me</h1>
+          <p class="container mt-5" style="font-size: 22px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat hendrerit augue at dapibus. Integer
+            malesuada, libero vel rutrum commodo. </p>
+      </div>
+    </div>
+  </section>
+
+  <!------------------------------------------------------------------------------------->
+
+  <section id="projects">
+    <div class="row">
+      <h2 class="m-5">| Previous Works</h2>
+    </div>
+    <div class="row">
+      <div class="col m-3">
+        <!-- Card -->
+        <div class="card">
+          <div class="view overlay">
+            <img class="card-img-top" src="img/agri.png" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <div class="card-body" style="background:black;">
+            <a href="https://www.agrivator.com"><p class="card-title">Agrivator</p></a>
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+      <div class="col m-3">
+        <!-- Card -->
+        <div class="card">
+          <div class="view overlay">
+            <img class="card-img-top" src="img/iedc.png" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <div class="card-body" style="background:black;">
+            <a href="https://www.iedctkmce.com"><p class="card-title">IEDC TKMCE</p></a>
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+      <div class="col m-3">
+        <!-- Card -->
+        <div class="card">
+          <div class="view overlay">
+            <img class="card-img-top" src="img/gdsc.png" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <div class="card-body" style="background:black;">
+            <p class="card-title">STEPS TKMCE</p>
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+      <div class="col m-3">
+        <!-- Card -->
+        <div class="card">
+          <div class="view overlay">
+            <img class="card-img-top" src="img/gdsc.png" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <div class="card-body" style="background:black;">
+            <p class="card-title">GDSC TKMCE</p>
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------------------------------------------------------------------------------------------->
+
+
+  <section id="resume">
+    <div class="row m-5">
+      <h2>| Resume</h2>
+    </div>
+    <div class="row m-5">
+      <p>Download my resume from here.</p>
+    </div>
+    <div class="container">
+      <p style="text-align: center;"><button type="button" class="btn btn-elegant text-center">Download</button></p>
+    </div>
+  </section>
+
+
+  <!-------------------------------------------------------------------------------------------------------------->
+
+
+  <section id="skills container">
+    <div class="row m-5">
+      <h2>| Skills</h2>
+    </div>
+    <div class=" container">
+      <div class="row m-5">
+        <ul class="ml-5 mr-5">
+          <li class="m-1">
+            Python
+          </li>
+          <li class="m-1">
+            C programming
+          </li>
+          <li class="m-1">
+            Java 
+          </li>
+          <li class="m-1">
+            C++
+          </li>
+        </ul>
+        <ul class="ml-5 mr-5">
+          <li class="m-1">
+            Html5
+          </li>
+          <li class="m-1">
+            CSS3
+          </li>
+          <li class="m-1">
+            JavaScript
+          </li>
+          <li class="m-1">
+            Php
+          </li>
+          <li class="m-1">
+            MySql
+          </li>
+        </ul>
+        <ul class="ml-5 r-5">
+          <li class="m-1">
+            React Js
+          </li>
+          <li class="m-1">
+            Vue Js
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-------------------------------------------------------------------------------------------------------------->
+<!-- 
+  <section>
+    <div class="container">
+      <iframe src="https://links.collect.chat/5e68ef6fa961d65ed62e10f7"  width="100%" height="600" frameBorder="0"></iframe>
+    </div>
+  </section> -->
+
+  <section id="contact">
+    <div class="row">
+      <!-- <h2 class="m-5" style="font-size: 40px;">| Contact me</h2> -->
+    </div>
+    <div class="container">
+      <section class="mb-4">
+        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+        <div class="row">
+          <div class="col-md-12 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="name" name="name" class="form-control">
+                    <label for="name" class="">Your name</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="email" name="email" class="form-control">
+                    <label for="email" class="">Your email</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                    <input type="text" id="subject" name="subject" class="form-control">
+                    <label for="subject" class="">Subject</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="md-form">
+                    <textarea type="text" id="message" name="message" rows="2"
+                      class="form-control md-textarea"></textarea>
+                    <label for="message">Your message</label>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="text-center text-md-left">
+              <p style="text-align: center;"><a class="btn btn-elegant"
+                  onclick="document.getElementById('contact-form').submit();">Send</a></p>
+            </div>
+            <div class="status"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!---------------------------------------------------------------------------------------------------------------------->
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small special-color-dark pt-4 ">
+    <div class="container mb-3">
+      <div class="row text-center" style="margin-left: auto;margin-right: auto;">
+        <a href="https://www.linkedin.com/in/amjad-n-a06a9b171/" class="ml-3 mr-3">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/amjadamju" class="ml-3 mr-3">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100010405835638" class="ml-3 mr-3">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/amjadpanjeeri/" class="ml-3 mr-3">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="amjadpanjeeri@gmail.com" class="ml-3 mr-3">
+          <i class="far fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:</div>
+  </footer>
+  <!-- Footer -->
+
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
 </body>
 
 </html>
